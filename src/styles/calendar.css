@@ -1,0 +1,101 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calendar {
+  margin-top: 50px;
+  height: 600px;
+  width: 75vw;
+  max-width: 1550px;
+  background-color: #0071CE;
+  border: 2px;
+  border-radius: 10px;
+  border-style: solid;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-content {
+  min-width: 25%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-header {
+  max-width: 100%; 
+  display: flex;
+  align-items: center;
+  position: sticky;  
+  top: 0; 
+  background-color: #0071CE;
+}
+.calendar-header-content {
+  min-width: 26%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-header-days {
+  display: flex;  
+  margin-left: 50px;
+}
+
+.calendar-header-days-content {
+  height: 15px; 
+  min-width: 25px; 
+  margin-left: 10px; 
+  font-family: 'Cascadia code';
+}
+
+.calendar-employees-content {
+  min-width: 100%; 
+  display: flex; 
+  align-items: center; 
+  padding-left: 15px;
+}
+
+.calendar-holidays-content {
+  display: flex; 
+  align-items: flex-end; 
+  margin-left: 50px; 
+  width: 75%; 
+  min-width: 75%;
+}
+
+.calendar-holidays-button {
+  height: 20px;
+  min-width: 25px;
+  margin-left: 10px; 
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer-button {
+  padding: 10px;
+  font-family: 'Cascadia code';
+  background-color: aliceblue;
+}
+
+@media only screen and (max-width: 800px) {
+  .calendar-content {
+    min-width: 75%; 
+  }
+  .calendar-header-content {
+    min-width: 80%; 
+  }
+}
