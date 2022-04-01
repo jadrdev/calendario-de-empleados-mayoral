@@ -10,17 +10,17 @@ export const ListFechas = () => {
 
 
   return (
-    <div className="calendar-header">
-       <div className='calendar-header-content'>
+    <div className="calendario-header">
+       <div className='calendario-header-content'>
         <b className='employee-name'>Listado de empleados</b>
       </div>
-      <div className='calendar-header-days'>
+      <div className='calendario-header-days'>
       {fechas.datos
             .filter((day) => day.fecha.toString().includes(`2021${getNumberOfMonth(mes)}`))
             .map((day) => (
             <p
               key={day.fecha}
-              className="calendar-header-days-content"
+              className="calendario-header-days-content"
             >{(day.fecha).toString().slice(-2)}</p>
             ))} 
         </div>

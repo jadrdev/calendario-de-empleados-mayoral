@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react'
 import { Header } from './components/header/Header'
-import { Calendar } from './components/calendar/calendar'
+import { Calendar } from './components/calendar/Calendar'
 import { CalendarContex } from './context/CalendarContex'
 import { CalendarReducer } from './context/CalendarReducer'
 import './styles/calendar.css'
@@ -14,14 +14,12 @@ export const App = () => {
   })
 
 
-
-
-
   return (
     <>
       
       <CalendarContex.Provider value={{
-        state
+        state,
+        dispatch
       }}>       
         <div className='container'>
           <Header />

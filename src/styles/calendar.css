@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.calendar {
+.calendario {
   margin-top: 50px;
   height: 600px;
   width: 75vw;
@@ -26,14 +26,18 @@
   flex-direction: column;
 }
 
-.calendar-content {
+.nombredelempleado{
+  color: #ffff
+}
+
+.calendario-content {
   min-width: 25%; 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.calendar-header {
+.calendario-header {
   max-width: 100%; 
   display: flex;
   align-items: center;
@@ -41,33 +45,34 @@
   top: 0; 
   background-color: #0071CE;
 }
-.calendar-header-content {
-  min-width: 26%; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.calendario-header-content {
+  min-width: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.calendar-header-days {
+.calendario-header-days {
   display: flex;  
   margin-left: 50px;
 }
 
-.calendar-header-days-content {
+.calendario-header-days-content {
   height: 15px; 
   min-width: 25px; 
   margin-left: 10px; 
   font-family: 'Cascadia code';
 }
 
-.calendar-employees-content {
+.calendario-employees-content {
   min-width: 100%; 
   display: flex; 
   align-items: center; 
   padding-left: 15px;
 }
 
-.calendar-holidays-content {
+.calendario-vacaciones-content {
   display: flex; 
   align-items: flex-end; 
   margin-left: 50px; 
@@ -75,27 +80,26 @@
   min-width: 75%;
 }
 
-.calendar-holidays-button {
+.calendario-vacaciones-button {
   height: 20px;
   min-width: 25px;
   margin-left: 10px; 
 }
 
-.footer {
-  margin-top: 20px;
-}
-
-.footer-button {
-  padding: 10px;
-  font-family: 'Cascadia code';
-  background-color: aliceblue;
+.diasdevacacciones {
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  color: #fff;
 }
 
 @media only screen and (max-width: 800px) {
-  .calendar-content {
+  .calendario-content {
     min-width: 75%; 
   }
-  .calendar-header-content {
+  .calendario-header-content {
     min-width: 80%; 
   }
 }

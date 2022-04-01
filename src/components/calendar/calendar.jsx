@@ -9,19 +9,15 @@ export const Calendar = () => {
   
   return (
     <>
-      <div className='calendar'>
+      <div className='calendario'>
         <ListFechas />
         {empleados.data
         .map((employee, employeeId) => (
-          <div key={employeeId} className="calendar-employees-content">
+          <div key={employeeId} className="calendario-employees-content">
             <ListEmployees employee={employee} employeeId={employeeId} />
             <EmployeeCaledar employeeId={employeeId} />
           </div>
         ))}
-     
-        
-
-        
       </div>
     </>
   )
